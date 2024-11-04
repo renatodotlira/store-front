@@ -1,0 +1,33 @@
+.event-text {
+    font-size: 12px;
+    white-space: normal;       /* Permite a quebra automática de linha */
+    overflow-wrap: normal;     /* Evita a quebra de palavras no meio */
+    word-break: normal; 
+  }
+
+  /* Tela pequena (menor que 600px) */
+@media (max-width: 600px) {
+    .event-text {
+        font-size: 8px;
+    }
+    .fc-daygrid-day-number {
+        color: red !important;
+    }
+}
+
+/* Tela muito pequena (menor que 400px) */
+@media (max-width: 400px) {
+    .event-text {
+        font-size: 6px;
+    }
+}
+
+.alert-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    border-radius: 0;
+    text-align: center;
+  }
