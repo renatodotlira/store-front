@@ -1,4 +1,3 @@
-// src/app/appointment.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -24,7 +23,6 @@ export class ProductService {
         this.authService.login(environment.authCredentials.email, environment.authCredentials.password);
         const token = localStorage.getItem('token');
     
-        // Configura os parâmetros de consulta
         let params = new HttpParams()
           .set('page', page.toString())
           .set('size', size.toString())
